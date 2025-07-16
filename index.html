@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <header>
+        <nav>
+            <section>
+                <h2>Vishal Menaria</h2>
+            </section>
+            <section class="nav-items-section">
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/file/d/1pZel_yHPj-ASDAyBTmD4_UPycjb1H2WI/view?usp=sharing" target="_blank">Resume</a>
+                    </li>
+                    <li>
+                        <a href="./skills.html">Skills</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="button-nav-section">
+                <a href="https://github.com/vishal126" target="_blank" class="nav-button">GitHub</a>
+                <a href="https://www.linkedin.com/in/vishal-menaria-a346b528a/" target="_blank" class="nav-button">LinkdIn</a>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hello! I'm <strong>Vishal Menaria</strong>, <br>A passionate and creative web developer focused
+                        on
+                        building responsive, accessible, and user-friendly web applications. <br>I enjoy turning complex
+                        problems into simple, elegant solutions.
+                    </p>
+                    <p>
+                        This portfolio is a showcase of my personal and professional projects. You’ll find interactive
+                        demos, links to GitHub repositories, and brief writeups explaining the technologies I used.
+                    </p>
+                    <p>
+                        I'm currently learning more about backend technologies and deployment workflows, and I love
+                        collaborating on open source.
+                    </p>
+                    <!-- button -->
+                     <div class="about-text-buttons">
+                        <button id="project1" onclick="highlightProject('card1')">Project1</button>
+                        <button id="project2" onclick="highlightProject('card2')">Project2</button>
+                     </div>
+                </div>
+                <div class="about-photo">
+                    <img src="./VISHAL PHOTO.jpg" alt="Vishal Menaria profile picture" loading="lazy" />
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="project-card card1" id="card1">
+                <h3>Portfolio Site</h3>
+                <div class="project-card-photo photo1" id="photo1">
+                    <img src="./Portfolio-site.png"
+                        alt="Screenshot of Project 1 - Portfolio Landing Page">
+                </div>
+                <div class="project-card-about about1" id="about1">
+                    <p>This project is about my this portfolio site and in this I used responsive design for major devices.<br>it Consists of navbar, about section, projects and a footer with flex box and grid layout used.</p>
+                </div>
+                <div class="project-card-tech-stack tech-stack1" id="tech-stack1">
+                    <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>js</li>
+                        <li>git</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+                <div class="project-card-button button1" id="button1">
+                    <button onclick="window.open('https://github.com/vishal126/Portfolio-Projects/tree/main/Personal%20Portfolio%20Website', '_blank')">Code</button>
+                </div>
+            </div>
+
+            <div class="project-card card1" id="card1">
+                <h3>Mixed Messages</h3>
+                <div class="project-card-photo photo1" id="photo1">
+                    <img src="./Mixed Messages.png"
+                        alt="Screenshot of Project 1 - Portfolio Landing Page">
+                </div>
+                <div class="project-card-about about1" id="about1">
+                    <p>In this project I have used JavaScript to demonstrate knowledge of Objects, its methods with getters and setters.<br>It generates the random message everytime when user runs the program with multiple function calls.</p>
+                </div>
+                <div class="project-card-tech-stack tech-stack1" id="tech-stack1">
+                    <ul>
+                        <li>JS</li>
+                        <li>git</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+                <div class="project-card-button button1" id="button1">
+                    <button onclick="window.open('https://github.com/vishal126/Portfolio-Projects/tree/main/Mixed%20Messages%20new', '_blank')">Code</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <div class="footer-content">
+        <p>© 2025 Vishal Menaria. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="https://github.com/vishal126" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/vishal-menaria-a346b528a/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="#body">Back to Top</a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+<script src="script.js"></script>
+</html>
